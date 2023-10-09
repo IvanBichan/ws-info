@@ -37,9 +37,10 @@ body {
     position: absolute;
     left: 37vw;
     top: 8vh;
+    z-index: -1;
 }
 
-.main-header {
+.main__header {
     height: 100vh;
 }
 
@@ -47,10 +48,22 @@ body {
     padding: 0 7vw;
 }
 
-.main-title {
+.main__title {
     font-size: calc(var(--index) * 8);
     position: absolute;
     width: min-content;
     bottom: 12vh;
     line-height: .9;
+}
+
+.gallery {
+    display: flex;
+
+}
+
+.gallery > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
